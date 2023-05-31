@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[${loaderVersion},)"
+license = "Ultreon API 1.0"
+issueTrackerURL = "https://github.com/Ultreon/ultimate-ender-mod/issues"
+
+# The main mod, and all sub-mods.
+[[mods]]
+modId = "tuem"
+version = "${version}"
+displayName = "The Ultimate Ender Mod"
+#updateJSONURL="http://myurl.me/"
+displayURL = "https://github.com/Ultreon/ultimate-ender-mod"
+logoFile="tuem.png"
+credits = "Qboi, Insigmatic, ByteLaw5"
+authors = "Ultreon Team"
+description = """
+${description}
+"""
+displayTest = "IGNORE_ALL_VERSION"
+
+# Dependencies for the main mod.
+[[dependencies.tuem]]
+modId = "forge"
+mandatory = true
+versionRange = "[${forgeVersion},)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.tuem]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraftVersion},1.20)"
+ordering = "NONE"
+side = "CLIENT"

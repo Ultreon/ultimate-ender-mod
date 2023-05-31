@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "tuem",
+  "version": "${version}",
+  "name": "The Ultimate Ender Mod",
+  "description": "${description}",
+  "authors": [
+    "Ultreon Team"
+  ],
+  "contributors": [
+    {
+      "name": "Qboi",
+      "contact": {
+        "homepage": "https://github.com/Qboi123",
+        "youtube": "https://youtube.com/@ultreon"
+      }
+    },
+    {
+      "name": "Insigmatic",
+      "contact": {
+        "sources": "https://github.com/Insigmatic"
+      }
+    },
+    {
+      "name": "ByteLaw5",
+      "contact": {
+        "sources": "https://github.com/ByteLaw5"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://github.com/Ultreon/ultimate-ender-mod",
+    "sources": "https://github.com/Ultreon/ultimate-ender-mod",
+    "issues": "https://github.com/Ultreon/ultimate-ender-mod/issues"
+  },
+  "license": "Ultreon-API-1.0",
+  "icon": "assets/tuem/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.ultreon.mods.tuem.fabric.UltimateEnderModClientFabric"
+    ],
+    "server": [
+      "com.ultreon.mods.tuem.fabric.UltimateEnderModServerFabric"
+    ],
+    "main": [
+      "com.ultreon.mods.tuem.fabric.UltimateEnderModFabric"
+    ]
+  },
+  "mixins": [
+    "ultimate-ender-mod.mixins.json",
+    "ultimate-ender-mod-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loaderVersion}",
+    "minecraft": ">=${minecraftVersion} <1.20",
+    "architectury": ">=8.1 <9.0",
+    "forgeconfigapiport": ">=6.0 <7.0"
+  }
+}
