@@ -1,19 +1,26 @@
 package com.ultreon.mods.tuem;
 
+import com.ultreon.mods.tuem.init.ModItems;
+import dev.architectury.registry.CreativeTabRegistry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class UltimateEnderMod {
     public static final String MOD_ID = "tuem";
-
-    // Directly reference a log4j logger.
     public static final Logger LOGGER = LoggerFactory.getLogger("TUEM");
+
     private static UltimateEnderMod instance;
 
     public static UltimateEnderMod getInstance() {
         return instance;
     }
+
+    public static final CreativeTabRegistry.TabSupplier MOD_TAB = CreativeTabRegistry.create(res("creative_tab"), /*builder ->
+            builder.icon(() -> new ItemStack(ModItems.MUTATED_ENDERIUM_INGOT.get()))
+            .title(Component.translatable("ultimate_ender_mod.creative_tab"))
+            .build()*/ () -> new ItemStack(ModItems.MUTATED_ENDERIUM_INGOT.get()));
 
     @SuppressWarnings("ConstantConditions")
     public UltimateEnderMod() {
@@ -21,11 +28,9 @@ public class UltimateEnderMod {
     }
 
     public void init() {
-
-    }
-
-    public String getModId() {
-        return MOD_ID;
+        LOGGER.info("Starting Ultimate Ender Mod");
+        ModItems.register();
+        CreativeTabRegistry.append(MOD_TAB, ModItems.MUTATED_ENDERIUM_INGOT);
     }
 
     public static ResourceLocation res(String path) {

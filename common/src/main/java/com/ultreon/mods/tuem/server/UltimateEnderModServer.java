@@ -1,4 +1,4 @@
-package com.ultreon.mods.tuem.client;
+package com.ultreon.mods.tuem.server;
 
 import dev.architectury.event.events.common.LifecycleEvent;
 import net.minecraft.server.MinecraftServer;

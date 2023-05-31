@@ -3,15 +3,19 @@ package com.ultreon.mods.tuem.forge;
 import com.ultreon.mods.tuem.Config;
 import com.ultreon.mods.tuem.UltimateEnderMod;
 import com.ultreon.mods.tuem.client.UltimateEnderModClient;
-import com.ultreon.mods.tuem.client.UltimateEnderModServer;
+import com.ultreon.mods.tuem.server.UltimateEnderModServer;
+import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(UltimateEnderMod.MOD_ID)
 public class UltimateEnderModForge {
     public UltimateEnderModForge() {
+        EventBuses.registerModEventBus(UltimateEnderMod.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
             UltimateEnderModClient main = new UltimateEnderModClient();
             main.init();
