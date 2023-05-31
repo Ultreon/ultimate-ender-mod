@@ -1,4 +1,9 @@
 {
   "item.tuem.mutated_enderium_ingot": "Mutated Enderium Ingot",
+  "item.tuem.mutated_enderium_helmet": "Mutated Enderium Helmet",
+  "item.tuem.mutated_enderium_chestplate": "Mutated Enderium Chestplate",
+  "item.tuem.mutated_enderium_leggings": "Mutated Enderium Leggings",
+  "item.tuem.mutated_enderium_boots": "Mutated Enderium Boots",
+
   "itemGroup.tuem.creative_tab": "Ultimate Ender Mod"
 }

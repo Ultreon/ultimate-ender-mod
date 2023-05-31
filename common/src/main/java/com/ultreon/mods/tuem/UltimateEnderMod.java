@@ -30,7 +30,6 @@ public class UltimateEnderMod {
     public void init() {
         LOGGER.info("Starting Ultimate Ender Mod");
         ModItems.register();
-        CreativeTabRegistry.append(MOD_TAB, ModItems.MUTATED_ENDERIUM_INGOT);
     }
 
     public static ResourceLocation res(String path) {
