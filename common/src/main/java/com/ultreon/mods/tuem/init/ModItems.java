@@ -6,6 +6,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
 import java.util.function.Supplier;
@@ -14,6 +15,7 @@ public class ModItems {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(UltimateEnderMod.MOD_ID, Registries.ITEM);
 
     public static final RegistrySupplier<Item> MUTATED_ENDERIUM_INGOT = register("mutated_enderium_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<BlockItem> MUTATED_ENDERIUM_BLOCK = register("mutated_enderium_block", () -> new BlockItem(ModBlocks.MUTATED_ENDERIUM_BLOCK.get(), new Item.Properties()));
 
     public static final RegistrySupplier<ArmorItem> MUTATED_ENDERIUM_HELMET = register("mutated_enderium_helmet", () -> new ArmorItem(ArmorMaterials.MUTATED_ENDERIUM, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistrySupplier<ArmorItem> MUTATED_ENDERIUM_CHESTPLATE = register("mutated_enderium_chestplate", () -> new ArmorItem(ArmorMaterials.MUTATED_ENDERIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));

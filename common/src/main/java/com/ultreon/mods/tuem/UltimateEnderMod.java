@@ -1,5 +1,6 @@
 package com.ultreon.mods.tuem;
 
+import com.ultreon.mods.tuem.init.ModBlocks;
 import com.ultreon.mods.tuem.init.ModItems;
 import dev.architectury.registry.CreativeTabRegistry;
 import net.minecraft.resources.ResourceLocation;
@@ -29,6 +30,7 @@ public class UltimateEnderMod {
 
     public void init() {
         LOGGER.info("Starting Ultimate Ender Mod");
+        ModBlocks.register();
         ModItems.register();
     }
 
