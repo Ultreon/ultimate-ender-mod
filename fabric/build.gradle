@@ -73,6 +73,7 @@ processResources {
     }
 
     from "$rootProject.projectDir/LICENSE"
+    from project(":forge").file("src/generated")
 }
 
 shadowJar {
