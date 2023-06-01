@@ -16,6 +16,7 @@ public class ModBlocks {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(UltimateEnderMod.MOD_ID, Registries.BLOCK);
 
     public static final RegistrySupplier<Block> MUTATED_ENDERIUM_BLOCK = register("mutated_enderium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+    public static final RegistrySupplier<Block> MUTATED_ENDERIUM_ORE = register("mutated_enderium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 
     @SuppressWarnings("SameParameterValue")
     private static <I extends Block> RegistrySupplier<I> register(String name, Supplier<I> supplier) {
