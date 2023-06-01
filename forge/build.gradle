@@ -1,7 +1,7 @@
 //file:noinspection GrDeprecatedAPIUsage
 //file:noinspection GroovyAssignabilityCheck
 plugins {
-    id "com.github.johnrengelman.shadow" version "7.1.2"
+    id "com.github.johnrengelman.shadow" version "8.1.1"
 }
 
 version rootProject.version
@@ -60,17 +60,17 @@ shadowJar {
     exclude "architectury.common.json"
 
     configurations = [project.configurations.shadowCommon]
-    classifier "dev-shadow"
+    //classifier "dev-shadow"
 }
 
 remapJar {
     input.set shadowJar.archiveFile
     dependsOn shadowJar
-    classifier null
+    //classifier null
 }
 
 jar {
-    classifier "dev"
+    //classifier "dev"
     manifest {
         attributes([
                 "Specification-Title"     : "Ultreon Modding Lib",
