@@ -1,8 +1,8 @@
 //file:noinspection GroovyAssignabilityCheck
 //file:noinspection GroovyAccessibility
 plugins {
-    id "architectury-plugin" version "3.4.146"
-    id "dev.architectury.loom" version "1.2.341" apply false
+    id "architectury-plugin" version "3.4-SNAPSHOT"
+    id "dev.architectury.loom" version "1.2-SNAPSHOT" apply false
 }
 repositories {
     gradlePluginPortal()
