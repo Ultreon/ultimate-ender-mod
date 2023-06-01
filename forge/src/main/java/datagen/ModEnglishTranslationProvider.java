@@ -20,5 +20,10 @@ public class ModEnglishTranslationProvider extends LanguageProvider {
         add(ModItems.MUTATED_ENDERIUM_CHESTPLATE.get(), "Mutated Enderium Chestplate");
         add(ModItems.MUTATED_ENDERIUM_HELMET.get(), "Mutated Enderium Helmet");
         add("itemGroup.tuem.creative_tab", "The Ultimate Ender Mod");
+        add(ModItems.MUTATED_ENDERIUM_SWORD.get(), "Mutated Enderium Sword");
+        add(ModItems.MUTATED_ENDERIUM_AXE.get(), "Mutated Enderium Axe");
+        add(ModItems.MUTATED_ENDERIUM_PICKAXE.get(), "Mutated Enderium Pickaxe");
+        add(ModItems.MUTATED_ENDERIUM_SHOVEL.get(), "Mutated Enderium Shovel");
+        add(ModItems.MUTATED_ENDERIUM_HOE.get(), "Mutated Enderium Hoe");
     }
 }

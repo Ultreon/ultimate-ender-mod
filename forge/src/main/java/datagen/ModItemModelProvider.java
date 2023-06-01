@@ -20,9 +20,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simple(ModItems.MUTATED_ENDERIUM_LEGGINGS);
         simple(ModItems.MUTATED_ENDERIUM_CHESTPLATE);
         simple(ModItems.MUTATED_ENDERIUM_HELMET);
+        handheld(ModItems.MUTATED_ENDERIUM_SWORD);
+        handheld(ModItems.MUTATED_ENDERIUM_PICKAXE);
+        handheld(ModItems.MUTATED_ENDERIUM_AXE);
+        handheld(ModItems.MUTATED_ENDERIUM_SHOVEL);
+        handheld(ModItems.MUTATED_ENDERIUM_HOE);
     }
 
     private <T extends Item> void simple(RegistrySupplier<T> item) {
         singleTexture(item.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/" + item.getId().getPath()));
+    }
+
+    private <T extends Item> void handheld(RegistrySupplier<T> item) {
+        singleTexture(item.getId().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + item.getId().getPath()));
     }
 }
