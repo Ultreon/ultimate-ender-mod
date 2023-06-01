@@ -1,9 +1,19 @@
 {
   "block.tuem.mutated_enderium_block": "Mutated Enderium Block",
+<<<<<<< HEAD:forge/src/generated/assets/tuem/lang/en_us.json
   "item.tuem.mutated_enderium_boots": "Mutated Enderium Boots",
   "item.tuem.mutated_enderium_chestplate": "Mutated Enderium Chestplate",
   "item.tuem.mutated_enderium_helmet": "Mutated Enderium Helmet",
   "item.tuem.mutated_enderium_ingot": "Mutated Enderium Ingot",
   "item.tuem.mutated_enderium_leggings": "Mutated Enderium Leggings",
   "itemGroup.tuem.creative_tab": "The Ultimate Ender Mod"
+=======
+  "item.tuem.mutated_enderium_sword": "Mutated Enderium Sword",
+  "item.tuem.mutated_enderium_pickaxe": "Mutated Enderium Pickaxe",
+  "item.tuem.mutated_enderium_axe": "Mutated Enderium Axe",
+  "item.tuem.mutated_enderium_shovel": "Mutated Enderium Shovel",
+  "item.tuem.mutated_enderium_hoe": "Mutated Enderium Hoe",
+
+  "itemGroup.tuem.creative_tab": "Ultimate Ender Mod"
+>>>>>>> 26ab8f6a2c31829e0b3a646f3a823c7ec289b2c1:common/src/main/resources/assets/tuem/lang/en_us.json
 }
