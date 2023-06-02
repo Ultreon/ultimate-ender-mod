@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "mutated_enderium",
+  "key": {
+    "!": {
+      "item": "tuem:mutated_enderium_ingot"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " !!",
+    " #!",
+    " # "
+  ],
+  "result": {
+    "item": "tuem:mutated_enderium_axe"
+  },
+  "show_notification": true
+}
