@@ -37,7 +37,7 @@ public class ModRecipesProvider extends RecipeProvider {
                 .unlockedBy("get_mutated_enderium_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MUTATED_ENDERIUM_BLOCK.get()))
                 .save(writer);
         ShapedRecipeBuilder
-                .shaped(RecipeCategory.TOOLS, ModItems.MUTATED_ENDERIUM_SWORD.get())
+                .shaped(RecipeCategory.COMBAT, ModItems.MUTATED_ENDERIUM_SWORD.get())
                 .pattern("!")
                 .pattern("!")
                 .pattern("#")
