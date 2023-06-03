@@ -21,7 +21,7 @@ public class UltimateEnderMod {
     public static final CreativeTabRegistry.TabSupplier MOD_TAB = CreativeTabRegistry.create(res("creative_tab"), /*builder ->
             builder.icon(() -> new ItemStack(ModItems.MUTATED_ENDERIUM_INGOT.get()))
             .title(Component.translatable("ultimate_ender_mod.creative_tab"))
-            .build()*/ () -> new ItemStack(ModItems.MUTATED_ENDERIUM_INGOT.get()));
+            .build()*/ () -> new ItemStack(ModItems.ENDERIUM_INGOT.get()));
 
     @SuppressWarnings("ConstantConditions")
     public UltimateEnderMod() {
@@ -36,9 +36,5 @@ public class UltimateEnderMod {
 
     public static ResourceLocation res(String path) {
         return new ResourceLocation(MOD_ID, path);
-    }
-
-    private void setup() {
-
     }
 }

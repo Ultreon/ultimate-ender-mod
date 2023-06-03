@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tuem:hoe1"
+        "recipe": "tuem:mutated_enderium_hoe2"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "tuem:hoe1"
+      "tuem:mutated_enderium_hoe2"
     ]
   }
 }

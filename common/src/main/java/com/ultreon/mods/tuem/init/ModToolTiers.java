@@ -6,6 +6,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolTiers implements Tier {
+    ENDERIUM(5, 2048, 22, 11f, 4f, () -> Ingredient.of(ModItems.ENDERIUM_INGOT.get())),
     MUTATED_ENDERIUM(5, 4096, 22, 13.5f, 6f, () -> Ingredient.of(ModItems.MUTATED_ENDERIUM_INGOT.get()));
 
     private final int level, uses, enchantmentValue;

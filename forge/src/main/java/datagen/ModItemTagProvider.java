@@ -19,10 +19,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ItemTags.PICKAXES).add(ModItems.MUTATED_ENDERIUM_PICKAXE.get());
-        tag(ItemTags.SWORDS).add(ModItems.MUTATED_ENDERIUM_SWORD.get());
-        tag(ItemTags.AXES).add(ModItems.MUTATED_ENDERIUM_AXE.get());
-        tag(ItemTags.SHOVELS).add(ModItems.MUTATED_ENDERIUM_SHOVEL.get());
-        tag(ItemTags.HOES).add(ModItems.MUTATED_ENDERIUM_HOE.get());
+        tag(ItemTags.PICKAXES).add(ModItems.ENDERIUM_PICKAXE.get(), ModItems.MUTATED_ENDERIUM_PICKAXE.get());
+        tag(ItemTags.SWORDS).add(ModItems.ENDERIUM_SWORD.get(), ModItems.MUTATED_ENDERIUM_SWORD.get());
+        tag(ItemTags.AXES).add(ModItems.ENDERIUM_AXE.get(), ModItems.MUTATED_ENDERIUM_AXE.get());
+        tag(ItemTags.SHOVELS).add(ModItems.ENDERIUM_SHOVEL.get(), ModItems.MUTATED_ENDERIUM_SHOVEL.get());
+        tag(ItemTags.HOES).add(ModItems.ENDERIUM_HOE.get(), ModItems.MUTATED_ENDERIUM_HOE.get());
     }
 }

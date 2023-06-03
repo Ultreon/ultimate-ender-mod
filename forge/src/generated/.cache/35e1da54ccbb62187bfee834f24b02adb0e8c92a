@@ -1,6 +1,6 @@
-// 1.19.4	2023-06-02T12:28:01.5805892	Tags for minecraft:item mod id tuem
-aeb70b6633613ca932c25e8a4f24d77b6e9bba5e data/minecraft/tags/items/axes.json
-43b14166f4d6010aa19d85b2e8030986e0257eef data/minecraft/tags/items/hoes.json
-39c660da70422cdb7c243ed8db51b637bf687c77 data/minecraft/tags/items/pickaxes.json
-7c2998b678d242ddb5fe7d7a8c0df9a114881ea6 data/minecraft/tags/items/shovels.json
-65fccb5edc37f294773b3e21b7e279f27668e564 data/minecraft/tags/items/swords.json
+// 1.19.4	2023-06-03T17:57:44.1348081	Tags for minecraft:item mod id tuem
+d98b27f5a26fb52c9d27e9e0c654bdbc88ef7d91 data/minecraft/tags/items/axes.json
+4e0c35c1a513d1bfd2da0edac6a66bca7211d38c data/minecraft/tags/items/hoes.json
+77bd02e7ca1327fa958e00511a9bef8d9b14b68b data/minecraft/tags/items/pickaxes.json
+8f7e9046faf22ffc860786706ec18cdda40d78cc data/minecraft/tags/items/shovels.json
+f6ab6e6221ea78dc9d9c9f227004649f3fec04ff data/minecraft/tags/items/swords.json
