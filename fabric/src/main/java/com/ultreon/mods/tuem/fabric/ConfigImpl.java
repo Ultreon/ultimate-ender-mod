@@ -7,6 +7,7 @@ import net.minecraftforge.fml.config.ModConfig;
 
 public class ConfigImpl {
     public static void register(Object context) {
-        ForgeConfigRegistry.INSTANCE.register(UltimateEnderMod.MOD_ID, ModConfig.Type.CLIENT, Config.build());
+        if(context != null)
+            ForgeConfigRegistry.INSTANCE.register(UltimateEnderMod.MOD_ID, ModConfig.Type.CLIENT, Config.build());
     }
 }
