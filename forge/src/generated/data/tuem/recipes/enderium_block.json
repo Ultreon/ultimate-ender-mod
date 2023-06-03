@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "enderium",
+  "key": {
+    "#": {
+      "item": "tuem:enderium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "tuem:enderium_block"
+  },
+  "show_notification": true
+}

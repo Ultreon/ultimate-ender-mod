@@ -13,6 +13,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        simpleBlockWithItem(ModBlocks.ENDERIUM_BLOCK.get(), models().cubeAll("enderium_block", modLoc("block/enderium_block")));
         simpleBlockWithItem(ModBlocks.MUTATED_ENDERIUM_BLOCK.get(), models().cubeAll("mutated_enderium_block", modLoc("block/mutated_enderium_block")));
     }
 }

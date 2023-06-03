@@ -15,6 +15,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        simple(ModItems.ENDERIUM_INGOT);
+        simple(ModItems.ENDERIUM_BOOTS);
+        simple(ModItems.ENDERIUM_LEGGINGS);
+        simple(ModItems.ENDERIUM_CHESTPLATE);
+        simple(ModItems.ENDERIUM_HELMET);
+        handheld(ModItems.ENDERIUM_SWORD);
+        handheld(ModItems.ENDERIUM_PICKAXE);
+        handheld(ModItems.ENDERIUM_AXE);
+        handheld(ModItems.ENDERIUM_SHOVEL);
+        handheld(ModItems.ENDERIUM_HOE);
+
         simple(ModItems.MUTATED_ENDERIUM_INGOT);
         simple(ModItems.MUTATED_ENDERIUM_BOOTS);
         simple(ModItems.MUTATED_ENDERIUM_LEGGINGS);

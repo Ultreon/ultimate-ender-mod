@@ -18,7 +18,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.MUTATED_ENDERIUM_BLOCK.get());
-        tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.MUTATED_ENDERIUM_BLOCK.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.ENDERIUM_BLOCK.get(), ModBlocks.MUTATED_ENDERIUM_BLOCK.get());
+        tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.ENDERIUM_BLOCK.get(), ModBlocks.MUTATED_ENDERIUM_BLOCK.get());
     }
 }

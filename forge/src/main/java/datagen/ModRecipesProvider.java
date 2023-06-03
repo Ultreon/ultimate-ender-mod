@@ -22,6 +22,92 @@ public class ModRecipesProvider extends RecipeProvider {
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> writer) {
         ShapedRecipeBuilder
+                .shaped(RecipeCategory.MISC, ModItems.ENDERIUM_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.ENDERIUM_INGOT.get())
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer);
+        ShapelessRecipeBuilder
+                .shapeless(RecipeCategory.MISC, ModItems.ENDERIUM_INGOT.get(), 9)
+                .requires(ModItems.ENDERIUM_BLOCK.get())
+                .group("enderium")
+                .unlockedBy("get_enderium_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_BLOCK.get()))
+                .save(writer);
+        ShapedRecipeBuilder
+                .shaped(RecipeCategory.COMBAT, ModItems.ENDERIUM_SWORD.get())
+                .pattern("!")
+                .pattern("!")
+                .pattern("#")
+                .define('!', ModItems.ENDERIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer);
+        ShapedRecipeBuilder
+                .shaped(RecipeCategory.TOOLS, ModItems.ENDERIUM_PICKAXE.get())
+                .pattern("!!!")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('!', ModItems.ENDERIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer);
+        ShapedRecipeBuilder
+                .shaped(RecipeCategory.TOOLS, ModItems.ENDERIUM_AXE.get())
+                .pattern(" !!")
+                .pattern(" #!")
+                .pattern(" # ")
+                .define('!', ModItems.ENDERIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer, modLoc("enderium_axe1"));
+        ShapedRecipeBuilder
+                .shaped(RecipeCategory.TOOLS, ModItems.ENDERIUM_AXE.get())
+                .pattern("!! ")
+                .pattern("!# ")
+                .pattern(" # ")
+                .define('!', ModItems.ENDERIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer, modLoc("enderium_axe2"));
+        ShapedRecipeBuilder
+                .shaped(RecipeCategory.TOOLS, ModItems.ENDERIUM_SHOVEL.get())
+                .pattern("!")
+                .pattern("#")
+                .pattern("#")
+                .define('!', ModItems.ENDERIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer);
+        ShapedRecipeBuilder
+                .shaped(RecipeCategory.TOOLS, ModItems.ENDERIUM_HOE.get())
+                .pattern(" !!")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('!', ModItems.ENDERIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer, modLoc("enderium_hoe1"));
+        ShapedRecipeBuilder
+                .shaped(RecipeCategory.TOOLS, ModItems.ENDERIUM_HOE.get())
+                .pattern("!! ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('!', ModItems.ENDERIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .group("enderium")
+                .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
+                .save(writer, modLoc("enderium_hoe2"));
+
+        ShapedRecipeBuilder
                 .shaped(RecipeCategory.MISC, ModItems.MUTATED_ENDERIUM_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
@@ -65,7 +151,7 @@ public class ModRecipesProvider extends RecipeProvider {
                 .define('#', Items.STICK)
                 .group("mutated_enderium")
                 .unlockedBy("get_mutated_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MUTATED_ENDERIUM_INGOT.get()))
-                .save(writer, modLoc("axe1"));
+                .save(writer, modLoc("mutated_enderium_axe1"));
         ShapedRecipeBuilder
                 .shaped(RecipeCategory.TOOLS, ModItems.MUTATED_ENDERIUM_AXE.get())
                 .pattern("!! ")
@@ -75,7 +161,7 @@ public class ModRecipesProvider extends RecipeProvider {
                 .define('#', Items.STICK)
                 .group("mutated_enderium")
                 .unlockedBy("get_mutated_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MUTATED_ENDERIUM_INGOT.get()))
-                .save(writer, modLoc("axe2"));
+                .save(writer, modLoc("mutated_enderium_axe2"));
         ShapedRecipeBuilder
                 .shaped(RecipeCategory.TOOLS, ModItems.MUTATED_ENDERIUM_SHOVEL.get())
                 .pattern("!")
@@ -95,7 +181,7 @@ public class ModRecipesProvider extends RecipeProvider {
                 .define('#', Items.STICK)
                 .group("mutated_enderium")
                 .unlockedBy("get_mutated_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MUTATED_ENDERIUM_INGOT.get()))
-                .save(writer, modLoc("hoe1"));
+                .save(writer, modLoc("mutated_enderium_hoe1"));
         ShapedRecipeBuilder
                 .shaped(RecipeCategory.TOOLS, ModItems.MUTATED_ENDERIUM_HOE.get())
                 .pattern("!! ")
@@ -105,6 +191,6 @@ public class ModRecipesProvider extends RecipeProvider {
                 .define('#', Items.STICK)
                 .group("mutated_enderium")
                 .unlockedBy("get_mutated_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MUTATED_ENDERIUM_INGOT.get()))
-                .save(writer, modLoc("hoe2"));
+                .save(writer, modLoc("mutated_enderium_hoe2"));
     }
 }

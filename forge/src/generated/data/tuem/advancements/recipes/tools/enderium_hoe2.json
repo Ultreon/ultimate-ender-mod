@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "get_mutated_enderium_ingot": {
+    "get_enderium_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "tuem:mutated_enderium_ingot"
+              "tuem:enderium_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tuem:axe2"
+        "recipe": "tuem:enderium_hoe2"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "get_mutated_enderium_ingot",
+      "get_enderium_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "tuem:axe2"
+      "tuem:enderium_hoe2"
     ]
   }
 }
