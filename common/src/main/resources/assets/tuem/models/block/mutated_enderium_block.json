@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tuem:block/mutated_enderium_block"
-  }
-}
