@@ -19,17 +19,21 @@ public class UltimateEnderModForge {
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
             UltimateEnderModClient main = new UltimateEnderModClient();
             main.init();
+
+            Config.registerClient(ModLoadingContext.get());
         });
 
         DistExecutor.unsafeRunWhenOn(Dist.DEDICATED_SERVER, () -> () -> {
             UltimateEnderModServer main = new UltimateEnderModServer();
             main.init();
+
+            Config.registerServer(ModLoadingContext.get());
         });
 
         UltimateEnderMod main = new UltimateEnderMod();
         main.init();
 
         ModLoadingContext ctx = ModLoadingContext.get();
-        Config.register(ctx);
+        Config.registerCommon(ctx);
     }
 }

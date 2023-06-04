@@ -10,6 +10,6 @@ public class UltimateEnderModFabric implements ModInitializer {
         UltimateEnderMod main = new UltimateEnderMod();
         main.init();
 
-        Config.register(null);
+        Config.registerCommon(null);
     }
 }
