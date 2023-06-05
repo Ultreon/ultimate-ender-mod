@@ -68,6 +68,7 @@ processResources {
     }
 
     from "$rootProject.projectDir/LICENSE"
+    exclude((String)generatedResources.path + "/.cache")
 }
 
 shadowJar {
