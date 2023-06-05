@@ -28,5 +28,7 @@ public class DataGatherer {
         dataGenerator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider, blockTagProvider.contentsGetter(), existingFileHelper));
         dataGenerator.addProvider(true, new ModRecipesProvider(packOutput));
         dataGenerator.addProvider(true, new ModLootTablesProvider(packOutput));
+
+        dataGenerator.addProvider(true, new ModWorldgenProvider(packOutput, lookupProvider));
     }
 }

@@ -24,6 +24,8 @@ public class ModEnglishTranslationProvider extends LanguageProvider {
         add(ModItems.ENDERIUM_PICKAXE.get(), "Enderium Pickaxe");
         add(ModItems.ENDERIUM_SHOVEL.get(), "Enderium Shovel");
         add(ModItems.ENDERIUM_HOE.get(), "Enderium Hoe");
+        add(ModItems.ENDERIUM_ORE.get(), "Enderium Ore");
+        add(ModItems.DEEPSLATE_ENDERIUM_ORE.get(), "Deepslate Enderium Ore");
 
         add(ModBlocks.MUTATED_ENDERIUM_BLOCK.get(), "Mutated Enderium Block");
         add(ModItems.MUTATED_ENDERIUM_INGOT.get(), "Mutated Enderium Ingot");

@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Consumer;
 
@@ -106,6 +107,45 @@ public class ModRecipesProvider extends RecipeProvider {
                 .group("enderium")
                 .unlockedBy("get_enderium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_INGOT.get()))
                 .save(writer, modLoc("enderium_hoe2"));
+        SimpleCookingRecipeBuilder.smelting(
+                Ingredient.of(ModItems.ENDERIUM_ORE.get()),
+                RecipeCategory.MISC,
+                ModItems.ENDERIUM_INGOT.get(),
+                0.2f,
+                200)
+                .group("enderium")
+                .unlockedBy("get_enderium_ore", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_ORE.get()))
+                .save(writer, modLoc("enderium_ore_smelting"));
+        SimpleCookingRecipeBuilder.blasting(
+                Ingredient.of(ModItems.ENDERIUM_ORE.get()),
+                RecipeCategory.MISC,
+                ModItems.ENDERIUM_INGOT.get(),
+                0.2f,
+                100
+                )
+                .group("enderium")
+                .unlockedBy("get_enderium_ore", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENDERIUM_ORE.get()))
+                .save(writer, modLoc("enderium_ore_blasting"));
+        SimpleCookingRecipeBuilder.smelting(
+                        Ingredient.of(ModItems.DEEPSLATE_ENDERIUM_ORE.get()),
+                        RecipeCategory.MISC,
+                        ModItems.ENDERIUM_INGOT.get(),
+                        0.2f,
+                        200)
+                .group("enderium")
+                .unlockedBy("get_deepslate_enderium_ore", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.DEEPSLATE_ENDERIUM_ORE.get()))
+                .save(writer, modLoc("deepslate_enderium_ore_smelting"));
+        SimpleCookingRecipeBuilder.blasting(
+                        Ingredient.of(ModItems.DEEPSLATE_ENDERIUM_ORE.get()),
+                        RecipeCategory.MISC,
+                        ModItems.ENDERIUM_INGOT.get(),
+                        0.2f,
+                        100
+                )
+                .group("enderium")
+                .unlockedBy("get_deepslate_enderium_ore", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.DEEPSLATE_ENDERIUM_ORE.get()))
+                .save(writer, modLoc("deepslate_enderium_ore_blasting"));
+
 
         ShapedRecipeBuilder
                 .shaped(RecipeCategory.MISC, ModItems.MUTATED_ENDERIUM_BLOCK.get())

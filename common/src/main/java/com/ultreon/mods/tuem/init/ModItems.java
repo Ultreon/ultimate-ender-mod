@@ -24,6 +24,8 @@ public class ModItems {
     public static final RegistrySupplier<AxeItem> ENDERIUM_AXE = register("enderium_axe", () -> new AxeItem(ModToolTiers.ENDERIUM, 7.5f, -3.0f, new Item.Properties()));
     public static final RegistrySupplier<ShovelItem> ENDERIUM_SHOVEL = register("enderium_shovel", () -> new ShovelItem(ModToolTiers.ENDERIUM, 2.25f, -3.0f, new Item.Properties()));
     public static final RegistrySupplier<HoeItem> ENDERIUM_HOE = register("enderium_hoe", () -> new HoeItem(ModToolTiers.ENDERIUM, -4, 0, new Item.Properties()));
+    public static final RegistrySupplier<BlockItem> ENDERIUM_ORE = register("enderium_ore", () -> new BlockItem(ModBlocks.ENDERIUM_ORE.get(), new Item.Properties()));
+    public static final RegistrySupplier<BlockItem> DEEPSLATE_ENDERIUM_ORE = register("deepslate_enderium_ore", () -> new BlockItem(ModBlocks.DEEPSLATE_ENDERIUM_ORE.get(), new Item.Properties()));
 
     public static final RegistrySupplier<Item> MUTATED_ENDERIUM_INGOT = register("mutated_enderium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<BlockItem> MUTATED_ENDERIUM_BLOCK = register("mutated_enderium_block", () -> new BlockItem(ModBlocks.MUTATED_ENDERIUM_BLOCK.get(), new Item.Properties()));

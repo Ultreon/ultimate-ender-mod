@@ -1,3 +1,5 @@
-// 1.19.4	2023-06-03T18:16:38.5980493	Loot Tables
+// 1.19.4	2023-06-05T00:04:44.4173961	Loot Tables
+644307778a915bad01b39b233136a3c209cdd68f data/tuem/loot_tables/blocks/deepslate_enderium_ore.json
 5eaf98f207886923d2f859d9346a03b1e54c895e data/tuem/loot_tables/blocks/enderium_block.json
+ebf10475abdca2e8c0cfe90d1b5da2947aa1b686 data/tuem/loot_tables/blocks/enderium_ore.json
 4d42a69e93dc000dfb7ce30a04053e095b4fd23c data/tuem/loot_tables/blocks/mutated_enderium_block.json

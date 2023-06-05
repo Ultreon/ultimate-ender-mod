@@ -15,5 +15,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlockWithItem(ModBlocks.ENDERIUM_BLOCK.get(), models().cubeAll("enderium_block", modLoc("block/enderium_block")));
         simpleBlockWithItem(ModBlocks.MUTATED_ENDERIUM_BLOCK.get(), models().cubeAll("mutated_enderium_block", modLoc("block/mutated_enderium_block")));
+        simpleBlockWithItem(ModBlocks.ENDERIUM_ORE.get(), models().cubeAll("enderium_ore", modLoc("block/enderium_ore")));
+        simpleBlockWithItem(ModBlocks.DEEPSLATE_ENDERIUM_ORE.get(), models().cubeAll("deepslate_enderium_ore", modLoc("block/deepslate_enderium_ore")));
     }
 }

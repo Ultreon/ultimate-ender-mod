@@ -5,6 +5,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -16,6 +17,9 @@ public class ModBlocks {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(UltimateEnderMod.MOD_ID, Registries.BLOCK);
 
     public static final RegistrySupplier<Block> ENDERIUM_BLOCK = register("enderium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(35f, 500f).sound(SoundType.METAL)));
+    public static final RegistrySupplier<Block> ENDERIUM_ORE = register("enderium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).strength(4f, 3f).sound(SoundType.STONE)));
+    public static final RegistrySupplier<Block> DEEPSLATE_ENDERIUM_ORE = register("deepslate_enderium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).strength(4.75f, 3.5f).sound(SoundType.STONE)));
+
     public static final RegistrySupplier<Block> MUTATED_ENDERIUM_BLOCK = register("mutated_enderium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK)));
 
     @SuppressWarnings("SameParameterValue")
