@@ -28,6 +28,12 @@ loom {
     }
 
     runs {
+        client {
+            runDir "run/client"
+        }
+        server {
+            runDir "run/server"
+        }
         data {
             data()
             programArgs "--all", "--mod", "tuem", "--output", generatedResources.absolutePath, "--existing", project(":common").file("src/main/resources").absolutePath
