@@ -16,12 +16,19 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ImmutableList.of(ModBlocks.ENDERIUM_BLOCK.get(), ModBlocks.MUTATED_ENDERIUM_BLOCK.get());
+        return ImmutableList.of(
+                ModBlocks.ENDERIUM_BLOCK.get(),
+                ModBlocks.MUTATED_ENDERIUM_BLOCK.get(),
+                ModBlocks.ENDERIUM_ORE.get(),
+                ModBlocks.DEEPSLATE_ENDERIUM_ORE.get()
+        );
     }
 
     @Override
     protected void generate() {
         add(ModBlocks.ENDERIUM_BLOCK.get(), createSingleItemTable(ModItems.ENDERIUM_BLOCK.get()));
         add(ModBlocks.MUTATED_ENDERIUM_BLOCK.get(), createSingleItemTable(ModItems.MUTATED_ENDERIUM_BLOCK.get()));
+        add(ModBlocks.ENDERIUM_ORE.get(), createSingleItemTable(ModItems.ENDERIUM_ORE.get()));
+        add(ModBlocks.DEEPSLATE_ENDERIUM_ORE.get(), createSingleItemTable(ModItems.DEEPSLATE_ENDERIUM_ORE.get()));
     }
 }

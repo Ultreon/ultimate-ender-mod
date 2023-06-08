@@ -1,6 +1,8 @@
 {
   "values": [
     "tuem:enderium_block",
+    "tuem:enderium_ore",
+    "tuem:deepslate_enderium_ore",
     "tuem:mutated_enderium_block"
   ]
 }

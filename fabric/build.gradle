@@ -79,7 +79,9 @@ processResources {
     }
 
     from "$rootProject.projectDir/LICENSE"
-    from project(":forge").file("src/generated")
+    def generatedResources = project(":forge").file("src/generated");
+    from generatedResources
+    exclude((String)generatedResources.path + "/.cache")
 }
 
 shadowJar {
